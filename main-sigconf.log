@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6600 64-bit) (preloaded format=pdflatex 2018.2.24)  4 MAY 2018 20:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6600 64-bit) (preloaded format=pdflatex 2018.2.24)  4 MAY 2018 20:43
 entering extended mode
 **./main-sigconf.tex
 (main-sigconf.tex
@@ -1053,21 +1053,11 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <6.2> on input line 155.
  (body-sigconf.tex
-Underfull \hbox (badness 10000) in paragraph at lines 3--4
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 5--6
-
- []
-
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <9> not available
 (Font)              Font shape `T1/lmss/m/sl' tried instead on input line 19.
-[1.1{C:/Users/cary.quibada/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
+ [1.1{C:/Users/cary.quibada/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
 
-]
-[2.2
+] [2.2
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 38.
@@ -1075,47 +1065,37 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 38.
  (main-sigconf.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 38.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 38.
-
-
-Package rerunfilecheck Warning: File `main-sigconf.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `main-sigconf.out':
-(rerunfilecheck)             Before: 954F2725CB5FF529ABB2034078AFA28E;748
-(rerunfilecheck)             After:  D6EEA7B3D6041843E77C3EAA032B7128;594.
+Package rerunfilecheck Info: File `main-sigconf.out' has not changed.
+(rerunfilecheck)             Checksum: D6EEA7B3D6041843E77C3EAA032B7128;594.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 38.
  ) ) 
 Here is how much of TeX's memory you used:
- 17185 strings out of 493303
- 259585 string characters out of 3126739
+ 17183 strings out of 493303
+ 259555 string characters out of 3126739
  366186 words of memory out of 3000000
- 20185 multiletter control sequences out of 15000+200000
- 101841 words of font info for 140 fonts, out of 3000000 for 9000
+ 20184 multiletter control sequences out of 15000+200000
+ 101854 words of font info for 140 fonts, out of 3000000 for 9000
  1302 hyphenation exceptions out of 8191
  60i,11n,94p,609b,430s stack positions out of 5000i,500n,10000p,200000b,50000s
-pdfTeX warning (dest): name{subsection.2.3} has been referenced but does no
-t exist, replaced by a fixed one
-
-{C:/Users/cary.quibada/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-
-ec.enc}{C:/Users/cary.quibada/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips
-/lm/lm-ts1.enc}<C:/Users/cary.quibada/AppData/Local/Programs/MiKTeX 2.9/fonts/t
-ype1/public/lm/lmb10.pfb><C:/Users/cary.quibada/AppData/Local/Programs/MiKTeX 2
-.9/fonts/type1/public/lm/lmr10.pfb><C:/Users/cary.quibada/AppData/Local/Program
-s/MiKTeX 2.9/fonts/type1/public/lm/lmr12.pfb><C:/Users/cary.quibada/AppData/Loc
-al/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr7.pfb><C:/Users/cary.quibada/Ap
-pData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr8.pfb><C:/Users/cary.q
-uibada/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr9.pfb><C:/Use
-rs/cary.quibada/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmri7.p
-fb><C:/Users/cary.quibada/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/
-lm/lmri8.pfb><C:/Users/cary.quibada/AppData/Local/Programs/MiKTeX 2.9/fonts/typ
-e1/public/lm/lmri9.pfb><C:/Users/cary.quibada/AppData/Local/Programs/MiKTeX 2.9
-/fonts/type1/public/lm/lmss9.pfb><C:/Users/cary.quibada/AppData/Local/Programs/
-MiKTeX 2.9/fonts/type1/public/lm/lmssbx10.pfb><C:/Users/cary.quibada/AppData/Lo
-cal/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmsso9.pfb>
-Output written on main-sigconf.pdf (2 pages, 296707 bytes).
+{C:/Users/cary.quibada/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm
+/lm-ec.enc}{C:/Users/cary.quibada/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/d
+vips/lm/lm-ts1.enc}<C:/Users/cary.quibada/AppData/Local/Programs/MiKTeX 2.9/fon
+ts/type1/public/lm/lmb10.pfb><C:/Users/cary.quibada/AppData/Local/Programs/MiKT
+eX 2.9/fonts/type1/public/lm/lmr10.pfb><C:/Users/cary.quibada/AppData/Local/Pro
+grams/MiKTeX 2.9/fonts/type1/public/lm/lmr12.pfb><C:/Users/cary.quibada/AppData
+/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr7.pfb><C:/Users/cary.quibad
+a/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr8.pfb><C:/Users/ca
+ry.quibada/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr9.pfb><C:
+/Users/cary.quibada/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr
+i7.pfb><C:/Users/cary.quibada/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pub
+lic/lm/lmri8.pfb><C:/Users/cary.quibada/AppData/Local/Programs/MiKTeX 2.9/fonts
+/type1/public/lm/lmri9.pfb><C:/Users/cary.quibada/AppData/Local/Programs/MiKTeX
+ 2.9/fonts/type1/public/lm/lmss9.pfb><C:/Users/cary.quibada/AppData/Local/Progr
+ams/MiKTeX 2.9/fonts/type1/public/lm/lmssbx10.pfb><C:/Users/cary.quibada/AppDat
+a/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmsso9.pfb>
+Output written on main-sigconf.pdf (2 pages, 295873 bytes).
 PDF statistics:
- 100 PDF objects out of 1000 (max. 8388607)
- 13 named destinations out of 1000 (max. 500000)
- 30769 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 95 PDF objects out of 1000 (max. 8388607)
+ 12 named destinations out of 1000 (max. 500000)
+ 30761 words of extra memory for PDF output out of 35830 (max. 10000000)
 

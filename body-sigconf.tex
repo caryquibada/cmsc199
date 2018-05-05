@@ -113,4 +113,101 @@ Various time frames linked to specific processes are present in a simulation:
       \item \textbf{Every second}, the Aedes agent select the best target. If they have at least one need, the Aedes will behave according to the \textbf{ Behavior decision-making process}. If none can satisfy the need of the Aedes, it will move randomly. Otherwise, it will move towards the target according to the procedure \textbf{movement and dispersal}.
 \end{enumerate}
   
+%Mula DITO%
+\subsection{Design Concepts}
 
+\subsubsection{Adaptation}
+	"Aedes behavior adapts to its internal conditions, the environment in its perceived distance, and the lighting level. This adaption process is developed through a fitness seeking process." Meaning the agent Aedes has been initialized with awareness in its environment, SpatObj's characteristics, and its next action will depend on the information gathered within the vicinity.
+\subsubsection{Fitness/Objectives}{
+    A fitness-seeking process \cite{grimm}has been implemented in the model due to the uncertain knowledge about mosquitoes, and especially Ae. Aegypti, choose a target. Stochastic (Randomness, involving a random variable, probabilistic) events are therefore possible in the model and mosquito behaviors can be driven by environmental context.\\
+    
+	Aedes evaluates and ranks its needs according to its needs by a behavior decision-making process. Then scans the local amenities (SpatObj) in the environment surrounding the agent(Aedes) then evaluates if that environment can supply Aedes' needs.\\
+	
+	For example, when Aedes is in the Ovipo state there will be a high probability that it will locate an environment with sufficient targets that contain blood. But if, in a time step \textit{t}, there is no blood source or scarce amount that it is considered non-detectable, it will try to proceed to another environment to find another blood meal or rest.\\
+	
+	Also, when Aedes is in Virgin, they suck on nectar to provide nourishment for themselves, just like most insects. So, it will inhabit itself in a local environment where there are nectar-producing plants.
+
+}
+\subsubsection{Sensing}
+Instead of using a trace emitted by a spatial object for each target\cite{cummins}, which means keeping track of all the activities the target has conducted per timestep, would result to accumulation of bulky computational resources. The model allows Aedes to calculate the most attractive object in their surroundings. Aedes can perceive a target’s attraction level among all SpatObj located within their perception.
+
+\subsubsection{Interaction}
+
+\indent The model allows every agent to create interactions that will affect their current inner state and/or interactions with other agents. Major interactions:
+\begin{itemize}
+
+	\item Aedes and SpatObj: Aedes has access to information accounted to the spatial objects in its surroundings such us blood or nectar levels, breeding or resting sites, etc. Air and water temperatures also affect the gonotrophic development of Aedes, development time and temperature are inversely related. (38-42 degrees, unfavorable) & (22 - 32 degrees, favorable)
+		
+	\item World and Aedes: a daily random mortality rate was initialized by agent World to kill mosquitoes every day. It relates to the random events in nature, such as predators and lighting level and several other factors. 
+		
+	\item SpatObj and World: World's daily overall     temperatures modifies air and water temperatures. Rainfall also modifies water level for breeding sites, increasing its influence rate.
+\end{itemize}
+
+\subsubsection{Stochasticity}
+    Random events are also considered, using a pseudo-random generator to state variability in procedures and state variables. We use the same random seed for the generator to ensure initial conditions remain the same for all simulations.\\
+Stochastic events in SpatObj:
+\begin{itemize}
+
+\item \textbf{Stage Transformation rate} - Stochastic events in SpatObjs relate to immature mosquito stocks, which is the stage transformation rate, or the survival probability of immature mosquitoes.\\
+
+\end{itemize}
+As for Stochastic Events regarding the Aedes, we classify them into several categories:
+\begin{itemize}
+
+\item \textbf{Survival probabilities} - differentiated to three different factors that doesn't rely on age:
+\begin{enumerate}
+		\item \textit{Nominal Daily Survival Rate}
+			The researchers calibrated the nominal daily survival rate so that the population curve is in line with two existing studies on Aedes aegypti surviorship, that use and exponential models and the Gompertz model\cite{yang}. Gompertz is like Logistics, only with faster decay on growth rate. 
+			
+		\item \textit{Temperature Dependent} 
+             For each stage, the minimum and maximum threshold temperatures are given for maximum survival rate. Then this probability decreases linearly beyond the two thresholds until it reaches the minimum survival rate of 0.05 (5\%) at extreme minimum and maximum survival – critica temperatures\cite{skeeter}.
+        
+		\item \textit{Biting Attempt}
+			Chance of the Aedes to survive while approaching or while accumulating blood meal/stock.
+\end{enumerate}
+
+	\item \textbf{Action Time} - or the duration of an Aedes in attempting the activity to be done and its completion time. For illustration, the mosquito wouldn't directly approach a blood meal target, instead, it will fly randomly (but eventually drawing nearer) until the blood meal is either doing lesser movements or distracted.
+    
+    \item	\textbf{Flight} - Aedes' flight is determined by random selection with a heading of +/- 30 degrees in the direction of a selected target or 360 degrees if it is in search for a target. Flight distance is restricted by its flight speed. We'll settle on a generic mosquito's average flight speed which is 1.2 mph (1.93 km/hr), or 139.8 mph (225 km/hr)relative to the size of an average human.\cite{speed}
+\end{itemize}
+
+\subsubsection{Observation}
+The model allows observations per individual, specific groups (per location, or depending on sorting type), or the entire population (egg - adult). Given that every agent is geo - referenced and saved into the shape file, it is possible to record for Aedes and SpatObj at each timestep. Activities and behavior are also recorded.
+
+\subsection{Initialization}
+
+The model is initialized with study environment characteristics, including daily weather and daily sunrise and sunset loaded by the agent World. Agent World also loads geographical or land-use (\textit{Land-use} involves the management and modification of natural environment or wilderness into built environment such as settlements and semi-natural habitats such as arable fields, pastures, and managed woods.) characteristic files to deploy SpatObj (location, type, space occupied, etc). Aedes population will be defined with the parameters given are inside various SpatObjs, depending on the events occuring.
+
+\subsection{Input Data}
+
+    Spatial organization is a digitize Shapefile, then the characteristic of each spatial object is defined in a description file in csv format obtained from data analysis of Census of India (year 2011) as well as field surveys. Meteorological data are also in csv format. The number of newborn Aedes and their place of birth must be predefined for each scenario.
+		
+	The shapefile format is a popular geospatial vector data format for geographic information system software. It is developed and regulated by Esri as a open specification for data interoperability among Esri and other GIS software products.
+\begin{figure*}[here]
+     \centering \includegraphics[width = 17cm]{fig2.png}
+        \caption{Stock transitions during pre-adult stage}
+\end{figure*}
+\subsection{Sub-models}
+    \subsubsection{Spatial Object Sub-models}
+    
+    \indent Models concerning oviposition site dynamics (place where to lay eggs), pre-adult mosquito stocks. For Aedes, behavior-decision making process, etc. will be discussed in this part.
+    
+    \begin{itemize}
+        \item \textit{Oviposition Site Dynamics}\\
+			Breeding sites are usually filled with water, potential sites in Delhi, which is the place where the simulation will be conducted, doesn’t guarantee water supply 24/7. So residents, specifically, poor people, will probably collect water and store them in coolers and water drums. These places or objects will be input as SpatObj and will be considered as potential breeding site.
+		
+        \item \textit{Dynamics of Aedes Stocks}\\
+        
+        Each stock will be represented by stages and are managed by a list where each item indicates the no. of immature stocks (Fig 2). A stock's transition rate varies with an enzyme kinetic function. Enzyme Kinetics refers to the study of reaction rates of enzymes, which are known to be biological catalysts for some biological reactions are relatively slow.\cite{enzyme}
+    \end{itemize}
+    \subsubsection{Aedes Sub-Models}
+    \begin{itemize}
+        \item \textit{Behavior Decision - making Process}
+        Uncertainties rise on how an Aedes choose its next action, although there are some events has a higher probability of occurring depending on the Aedes’ stage and/ or perceived environment. We will discuss the probability function where the Aedes have selected a target and will try to engage to action. In this given equation, ($P_{j}$) is the probability of the aedes to choose object j, ($N_j$) is the need for object ($j$), ($A_{nj}$) for attraction level and ($n$) for the SpatObj will try to approach. ($D_{n}$) distance of aedes to object.
+        $WG$ is the $j$ the weight of blood influence for the target $j$, $f1$ calculates the need of target j depending on current blood quantity and $f2$ is the need for target $j$ depending on current energy level. 
+          \begin{equation}\
+        P_{nj} = \frac{N_j * A_{nj}}{(D_n)^{0.1}}
+    \end{equation}
+    \end{itemize} 
+
+%HANGGANG DITO

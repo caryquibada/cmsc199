@@ -69,7 +69,7 @@ Each Aedes has the following state variables:
 
 These state variables describe the mathematical state of the model which helps to determine its future behavior in the absence of any external forces affecting the system. Also, it gives a description of the the SpatObj form the point of view of the Ae. Agypti's needs and constraints
 
-SpatObj is where an Aedes can locate itself and with which it can interact. This is environment is defined as a resource-based habitat for the mosquito. The Resources are needed to meet the Aedes' goals (bite, rest, oviposit, etc.) are available through input description of the environmental shape file process with Geographic Information System (GIS).
+SpatObj is where an Aedes can locate itself and with which it can interact. This is environment is defined as a resource-based habitat for the mosquito.\cite{Hartemink} The Resources are needed to meet the Aedes' goals (bite, rest, oviposit, etc.) are available through input description of the environmental shape file process with Geographic Information System (GIS).
 
 A SpatObj agent contains four targets that attract a mosquito,
 \begin{itemize}
@@ -129,7 +129,8 @@ Various time frames linked to specific processes are present in a simulation:
 
 }
 \subsubsection{Sensing}
-Instead of using a trace emitted by a spatial object for each target\cite{cummins}, which means keeping track of all the activities the target has conducted per timestep, would result to accumulation of bulky computational resources. The model allows Aedes to calculate the most attractive object in their surroundings. Aedes can perceive a target’s attraction level among all SpatObj located within their perception.
+Instead of using a trace emitted by a spatial object for each target\cite{cummins}, which means keeping track of all the activities the target has conducted per timestep, would result to accumulation of bulky computational resources. The model allows Aedes to calculate the most attractive object in their surroundings. Aedes can perceive a target’s attraction level among all 
+Obj located within their perception.
 
 \subsubsection{Interaction}
 

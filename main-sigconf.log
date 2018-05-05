@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6600 64-bit) (preloaded format=pdflatex 2018.2.24)  4 MAY 2018 20:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6600 64-bit) (preloaded format=pdflatex 2018.2.24)  5 MAY 2018 11:55
 entering extended mode
 **./main-sigconf.tex
 (main-sigconf.tex
@@ -1017,7 +1017,7 @@ tim
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    Try loading font information for T1+lmss on input line 155.
+LaTeX Font Info:    Try loading font information for T1+lmss on input line 157.
 
 
 ("C:\Users\cary.quibada\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\t1lmss.f
@@ -1029,16 +1029,16 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `T1/lmss/b/n' in size <17.28> not available
-(Font)              Font shape `T1/lmss/bx/n' tried instead on input line 155.
+(Font)              Font shape `T1/lmss/bx/n' tried instead on input line 157.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 155.
+(Font)              <10> on input line 157.
  ("C:\Program Files\MiKTeX 2.9\tex\latex\microtype\mt-msa.cfg"
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\microtype\mt-msb.cfg"
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
-LaTeX Font Info:    Try loading font information for TS1+lmr on input line 155.
+LaTeX Font Info:    Try loading font information for TS1+lmr on input line 157.
 
 
 ("C:\Users\cary.quibada\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\ts1lmr.f
@@ -1046,12 +1046,9 @@ d"
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 155.
-Missing character: There is no ¹ in font lmsy9!
+(Font)              <8> on input line 157.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 155.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6.2> on input line 155.
+(Font)              <6.2> on input line 157.
  (body-sigconf.tex
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <9> not available
 (Font)              Font shape `T1/lmss/m/sl' tried instead on input line 19.
@@ -1060,23 +1057,23 @@ LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <9> not available
 ] [2.2
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 38.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 38.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 45.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 45.
  (main-sigconf.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 38.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 38.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 45.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 45.
 Package rerunfilecheck Info: File `main-sigconf.out' has not changed.
-(rerunfilecheck)             Checksum: D6EEA7B3D6041843E77C3EAA032B7128;594.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 38.
+(rerunfilecheck)             Checksum: D7309D772E21A9A6A6248B7A343B79F7;888.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 45.
  ) ) 
 Here is how much of TeX's memory you used:
- 17183 strings out of 493303
- 259555 string characters out of 3126739
- 366186 words of memory out of 3000000
- 20184 multiletter control sequences out of 15000+200000
- 101854 words of font info for 140 fonts, out of 3000000 for 9000
+ 17168 strings out of 493303
+ 259227 string characters out of 3126739
+ 366189 words of memory out of 3000000
+ 20164 multiletter control sequences out of 15000+200000
+ 93836 words of font info for 134 fonts, out of 3000000 for 9000
  1302 hyphenation exceptions out of 8191
- 60i,11n,94p,609b,430s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 60i,11n,94p,574b,430s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/cary.quibada/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm
 /lm-ec.enc}{C:/Users/cary.quibada/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/d
 vips/lm/lm-ts1.enc}<C:/Users/cary.quibada/AppData/Local/Programs/MiKTeX 2.9/fon
@@ -1093,9 +1090,9 @@ lic/lm/lmri8.pfb><C:/Users/cary.quibada/AppData/Local/Programs/MiKTeX 2.9/fonts
  2.9/fonts/type1/public/lm/lmss9.pfb><C:/Users/cary.quibada/AppData/Local/Progr
 ams/MiKTeX 2.9/fonts/type1/public/lm/lmssbx10.pfb><C:/Users/cary.quibada/AppDat
 a/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmsso9.pfb>
-Output written on main-sigconf.pdf (2 pages, 295873 bytes).
+Output written on main-sigconf.pdf (2 pages, 299523 bytes).
 PDF statistics:
- 95 PDF objects out of 1000 (max. 8388607)
+ 101 PDF objects out of 1000 (max. 8388607)
  12 named destinations out of 1000 (max. 500000)
- 30761 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 28217 words of extra memory for PDF output out of 29859 (max. 10000000)
 

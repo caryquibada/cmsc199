@@ -7,15 +7,16 @@ Warning--I'm ignoring sandro's extra "author" field
 --line 37 of file bibliography.bib
 Warning--I'm ignoring somsakun's extra "author" field
 --line 42 of file bibliography.bib
-Warning--no journal in urban
-Warning--no number and no volume in urban
-Warning--page numbers missing in both pages and numpages fields in urban
+Warning--I didn't find a database entry for "urban"
 Warning--no journal in sandro
 Warning--no number and no volume in sandro
 Warning--page numbers missing in both pages and numpages fields in sandro
 Warning--no journal in carlos
 Warning--no number and no volume in carlos
 Warning--page numbers missing in both pages and numpages fields in carlos
+Warning--no journal in magori
+Warning--no number and no volume in magori
+Warning--page numbers missing in both pages and numpages fields in magori
 Warning--no journal in skeeter
 Warning--no number and no volume in skeeter
 Warning--page numbers missing in both pages and numpages fields in skeeter
@@ -26,4 +27,4 @@ Warning--no journal in descloux
 Warning--no number and no volume in descloux
 Warning--page numbers missing in both pages and numpages fields in descloux
 Warning--empty address in who:dengue
-(There were 22 warnings)
+(There were 23 warnings)

@@ -1,5 +1,29 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: main-sigconf.aux
-I found no \citation commands---while reading file main-sigconf.aux
-I found no \bibdata command---while reading file main-sigconf.aux
-I found no \bibstyle command---while reading file main-sigconf.aux
-(There were 3 error messages)
+The style file: ACM-Reference-Format.bst
+Database file #1: bibliography.bib
+Warning--I'm ignoring carlos's extra "author" field
+--line 31 of file bibliography.bib
+Warning--I'm ignoring sandro's extra "author" field
+--line 37 of file bibliography.bib
+Warning--I'm ignoring somsakun's extra "author" field
+--line 42 of file bibliography.bib
+Warning--no journal in urban
+Warning--no number and no volume in urban
+Warning--page numbers missing in both pages and numpages fields in urban
+Warning--no journal in sandro
+Warning--no number and no volume in sandro
+Warning--page numbers missing in both pages and numpages fields in sandro
+Warning--no journal in carlos
+Warning--no number and no volume in carlos
+Warning--page numbers missing in both pages and numpages fields in carlos
+Warning--no journal in skeeter
+Warning--no number and no volume in skeeter
+Warning--page numbers missing in both pages and numpages fields in skeeter
+Warning--no journal in somsakun
+Warning--no number and no volume in somsakun
+Warning--page numbers missing in both pages and numpages fields in somsakun
+Warning--no journal in descloux
+Warning--no number and no volume in descloux
+Warning--page numbers missing in both pages and numpages fields in descloux
+Warning--empty address in who:dengue
+(There were 22 warnings)

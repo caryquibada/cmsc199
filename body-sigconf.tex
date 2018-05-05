@@ -1,8 +1,8 @@
 \section{Introduction}
 
-It has been estimated that 50 million dengue cases infect people per year and there are approximately 2.5 billion people living in dengue-prone areas (tropics and urban settings). The number of dengue cases have been higher than ever. In 1955-1959 only 908 cases of dengue were recorded. A very steep rise in just a span of 60 years. This is mostly caused by the rise in population and having more dense urban living space.
+It has been estimated that 50 million dengue cases infect people per year and there are approximately 2.5 billion people living in dengue-prone areas (tropics and urban settings). The number of dengue cases have been higher than ever. In 1955-1959 only 908 cases of dengue were recorded. A very steep rise in just a span of 60 years\cite{who:dengue}. This is mostly caused by the rise in population and having more dense urban living space\cite{urban}.
 
-The main vector for the dengue virus, mosquito \textit{Aedes Aegypti}, has adapted to the conditions of urban areas in humid and temperate countries. In locations where clear water is abundant and its temperature is just right, the female Aedes lays her eggs. Studying the vectors in this certain environment can be helpful in the planning and mapping of the locations of prime breeding locations and "hotspots" for female Aedes. Having this ability means being able to control Aedes population.
+The main vector for the dengue virus, mosquito \textit{Aedes Aegypti}, has adapted to the conditions of urban areas in humid and temperate countries \cite{descloux,carlos}. In locations where clear water is abundant and its temperature is just right, the female Aedes lays her eggs. Studying the vectors in this certain environment can be helpful in the planning and mapping of the locations of prime breeding locations and "hotspots" for female Aedes\cite{who:dengue}. Having this ability means being able to control Aedes population.
 
 Models which utilize spatial aspects and also include time in their construction makes control more efficient. \textbf{MOMA} (Model Of Mosquito Aedes) is a model developed with space and time in mind and also utilizes the geographical outline and formation of a certain neighbourhood. This model uses Geographical Information Systems and Agent-Based Models for mapping the objects in this environment and the latter for giving the Aedes mosquito detailed behaviour
 
@@ -12,21 +12,21 @@ Models which utilize spatial aspects and also include time in their construction
 
 \subsection{Previous Models}
 
-\textbf{MOMA} is a behavioural model that surveys a large area representing a neighbourhood. It takes into account breeding sites, human density, topology and this sets it apart from previous models.
+\textbf{MOMA} is a behavioural model that surveys a large area representing a neighbourhood. It takes into account breeding sites\cite{skeeter,carlos}, human density, topology\cite{urban} and this sets it apart from previous models.
 
 \subsubsection{Skeeter-Buster} 
 
-Skeeter-Buster's main focus is on breeding site dynamics. It is a stochastic, spatially-explicit model that models cohorts of mosquitoes at a very fine spatial scale, down to the level of individual breeding sites for immature cohorts, or individual houses for adults. Skeeter Buster additionally includes a detailed genetic component, and can therefore model the genetics of Ae. aegypti populations, making it a crucial tool in the evaluation and development of genetic control strategies. 
+Skeeter-Buster's main focus is on breeding site dynamics \cite{skeeter}. It is a stochastic, spatially-explicit model that models cohorts of mosquitoes at a very fine spatial scale, down to the level of individual breeding sites for immature cohorts, or individual houses for adults. Skeeter Buster additionally includes a detailed genetic component, and can therefore model the genetics of Ae. aegypti populations, making it a crucial tool in the evaluation and development of genetic control strategies. 
 
 The main difference of it from MOMA is that Skeeter-Buster does not incorporate blood stocks from humans. It also differs from MOMA because of its scale. Skeeter-Buster focuses on the contents of individual houses and the individual water-containers where the Aedes lays their egg and where their eggs develop into other vectors. 
 
 \subsubsection{SimPopMosq}
 
-This model is the considered closest to the MOMA. It includes the blood stock in the model for the mosquitoes. This model allows for interactions between the mosquito and people but only in a very small vicinity. It adds a spatial aspect to the frequently used CIMSiM model. 
+This model is the considered closest to the MOMA. It includes the blood stock in the model for the mosquitoes. This model allows for interactions between the mosquito and people but only in a very small vicinity\cite{sandro}. It adds a spatial aspect to the frequently used CIMSiM model. 
 
-The CIMSiM Model estimates the capacity of the production of mosquito larvae in a vector site under varying temperatures and humidity or precipitation. This approach was also utilized and adapted by Skeeter Buster to model intra-container development.
+The CIMSiM Model estimates the capacity of the production of mosquito larvae in a vector site under varying temperatures and humidity or precipitation. This approach was also utilized and adapted by Skeeter Buster to model intra-container development\cite{somsakun,carlos}.
 
-The SimPopMosq model is based on the interaction of agent-based model made up of four classes (Aedes,human,dog and cat) with environmental data (vector,bedroom and garden). This model is used to study the dispersal and movement of Aedes indoors and gardens, and also studies the effeciency of mosquito trap placements.
+The SimPopMosq model is based on the interaction of agent-based model made up of four classes (Aedes,human,dog and cat) with environmental data (vector,bedroom and garden). This model is used to study the dispersal and movement of Aedes indoors and gardens, and also studies the effeciency of mosquito trap placements\cite{sandro}.
 
 
 \subsection{Assumptions}
@@ -41,53 +41,3 @@ The model was created using Gama 1.6.1. This software gives the ability to use g
 This model's main purpose is that it models and watches Aedes population dynamics in an urban setting having a dense and cramped setting. The main agent observed in this model is the agent Aedes, this agent is our main vector for the dengue virus. This agent is able to bite, mate, rest, oviposit, and interact with objects that consume space. 
 
 The setting of this model is affected by the real-world meteorogical data and the daily temperature of the desired location to simulate. In this study a neighbourhood in Delhi, India; was simulated. In this setting, precipitation is high and temperature for breeding sites is near or is ideal, since this India has a tropic climate.
-
-
-
-
-
-\appendix
-%Appendix A
-\section{Headings in Appendices}
-The rules about hierarchical headings discussed above for
-the body of the article are different in the appendices.
-In the \textbf{appendix} environment, the command
-\textbf{section} is used to
-indicate the start of each Appendix, with alphabetic order
-designation (i.e., the first is A, the second B, etc.) and
-a title (if you include one).  So, if you need
-hierarchical structure
-\textit{within} an Appendix, start with \textbf{subsection} as the
-highest level. Here is an outline of the body of this
-document in Appendix-appropriate form:
-\subsection{Introduction}
-\subsection{The Body of the Paper}
-\subsubsection{Type Changes and  Special Characters}
-\subsubsection{Math Equations}
-\paragraph{Inline (In-text) Equations}
-\paragraph{Display Equations}
-\subsubsection{Citations}
-\subsubsection{Tables}
-\subsubsection{Figures}
-\subsubsection{Theorem-like Constructs}
-\subsubsection*{A Caveat for the \TeX\ Expert}
-\subsection{Conclusions}
-\subsection{References}
-Generated by bibtex from your \texttt{.bib} file.  Run latex,
-then bibtex, then latex twice (to resolve references)
-to create the \texttt{.bbl} file.  Insert that \texttt{.bbl}
-file into the \texttt{.tex} source file and comment out
-the command \texttt{{\char'134}thebibliography}.
-% This next section command marks the start of
-% Appendix B, and does not continue the present hierarchy
-\section{More Help for the Hardy}
-
-Of course, reading the source code is always useful.  The file
-\path{acmart.pdf} contains both the user guide and the commented
-code.
-
-\begin{acks}
-  Acknowledgments here...
-
-\end{acks}
-\end{document}  % This is where a 'short' article might terminate

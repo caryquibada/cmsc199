@@ -119,11 +119,11 @@ Various time frames linked to specific processes are present in a simulation:
 \subsubsection{Adaptation}
 	"Aedes behavior adapts to its internal conditions, the environment in its perceived distance, and the lighting level. This adaption process is developed through a fitness seeking process." Meaning the agent Aedes has been initialized with awareness in its environment, SpatObj's characteristics, and its next action will depend on the information gathered within the vicinity.
 \subsubsection{Fitness/Objectives}{
-    A fitness-seeking process \cite{grimm}has been implemented in the model due to the uncertain knowledge about mosquitoes, and especially Ae. Aegypti, choose a target. Stochastic (Randomness, involving a random variable, probabilistic) events are therefore possible in the model and mosquito behaviors can be driven by environmental context.\\
+    A fitness-seeking process \cite{grimm}has been implemented in the model due to the uncertain knowledge about mosquitoes, and especially Ae. Aegypti, choose a target. Stochastic (Randomness, involving a random variable, probabilistic) events are therefore possible in the model and mosquito behaviors can be driven by environmental context.
     
-	Aedes evaluates and ranks its needs according to its needs by a behavior decision-making process. Then scans the local amenities (SpatObj) in the environment surrounding the agent(Aedes) then evaluates if that environment can supply Aedes' needs.\\
+	Aedes evaluates and ranks its needs according to its needs by a behavior decision-making process. Then scans the local amenities (SpatObj) in the environment surrounding the agent(Aedes) then evaluates if that environment can supply Aedes' needs.
 	
-	For example, when Aedes is in the Ovipo state there will be a high probability that it will locate an environment with sufficient targets that contain blood. But if, in a time step \textit{t}, there is no blood source or scarce amount that it is considered non-detectable, it will try to proceed to another environment to find another blood meal or rest.\\
+	For example, when Aedes is in the Ovipo state there will be a high probability that it will locate an environment with sufficient targets that contain blood. But if, in a time step \textit{t}, there is no blood source or scarce amount that it is considered non-detectable, it will try to proceed to another environment to find another blood meal or rest.
 	
 	Also, when Aedes is in Virgin, they suck on nectar to provide nourishment for themselves, just like most insects. So, it will inhabit itself in a local environment where there are nectar-producing plants.
 
@@ -136,7 +136,7 @@ Instead of using a trace emitted by a spatial object for each target\cite{cummin
 \indent The model allows every agent to create interactions that will affect their current inner state and/or interactions with other agents. Major interactions:
 \begin{itemize}
 
-	\item Aedes and SpatObj: Aedes has access to information accounted to the spatial objects in its surroundings such us blood or nectar levels, breeding or resting sites, etc. Air and water temperatures also affect the gonotrophic development of Aedes, development time and temperature are inversely related. (38-42 degrees, unfavorable) & (22 - 32 degrees, favorable)
+	\item Aedes and SpatObj: Aedes has access to information accounted to the spatial objects in its surroundings such us blood or nectar levels, breeding or resting sites, etc. Air and water temperatures also affect the gonotrophic development of Aedes, development time and temperature are inversely related. (38-42 degrees, unfavorable) \& (22 - 32 degrees, favorable)
 		
 	\item World and Aedes: a daily random mortality rate was initialized by agent World to kill mosquitoes every day. It relates to the random events in nature, such as predators and lighting level and several other factors. 
 		
@@ -144,11 +144,11 @@ Instead of using a trace emitted by a spatial object for each target\cite{cummin
 \end{itemize}
 
 \subsubsection{Stochasticity}
-    Random events are also considered, using a pseudo-random generator to state variability in procedures and state variables. We use the same random seed for the generator to ensure initial conditions remain the same for all simulations.\\
+    Random events are also considered, using a pseudo-random generator to state variability in procedures and state variables. We use the same random seed for the generator to ensure initial conditions remain the same for all simulations.
 Stochastic events in SpatObj:
 \begin{itemize}
 
-\item \textbf{Stage Transformation rate} - Stochastic events in SpatObjs relate to immature mosquito stocks, which is the stage transformation rate, or the survival probability of immature mosquitoes.\\
+\item \textbf{Stage Transformation rate} - Stochastic events in SpatObjs relate to immature mosquito stocks, which is the stage transformation rate, or the survival probability of immature mosquitoes.
 
 \end{itemize}
 As for Stochastic Events regarding the Aedes, we classify them into several categories:
@@ -183,20 +183,20 @@ The model is initialized with study environment characteristics, including daily
     Spatial organization is a digitize Shapefile, then the characteristic of each spatial object is defined in a description file in csv format obtained from data analysis of Census of India (year 2011) as well as field surveys. Meteorological data are also in csv format. The number of newborn Aedes and their place of birth must be predefined for each scenario.
 		
 	The shapefile format is a popular geospatial vector data format for geographic information system software. It is developed and regulated by Esri as a open specification for data interoperability among Esri and other GIS software products.
-\begin{figure*}[here]
+\begin{figure}
      \centering \includegraphics[width = 17cm]{fig2.png}
         \caption{Stock transitions during pre-adult stage}
-\end{figure*}
+\end{figure}
 \subsection{Sub-models}
     \subsubsection{Spatial Object Sub-models}
     
     \indent Models concerning oviposition site dynamics (place where to lay eggs), pre-adult mosquito stocks. For Aedes, behavior-decision making process, etc. will be discussed in this part.
     
     \begin{itemize}
-        \item \textit{Oviposition Site Dynamics}\\
+        \item \textit{Oviposition Site Dynamics}
 			Breeding sites are usually filled with water, potential sites in Delhi, which is the place where the simulation will be conducted, doesn’t guarantee water supply 24/7. So residents, specifically, poor people, will probably collect water and store them in coolers and water drums. These places or objects will be input as SpatObj and will be considered as potential breeding site.
 		
-        \item \textit{Dynamics of Aedes Stocks}\\
+        \item \textit{Dynamics of Aedes Stocks}
         
         Each stock will be represented by stages and are managed by a list where each item indicates the no. of immature stocks (Fig 2). A stock's transition rate varies with an enzyme kinetic function. Enzyme Kinetics refers to the study of reaction rates of enzymes, which are known to be biological catalysts for some biological reactions are relatively slow.\cite{enzyme}
     \end{itemize}

@@ -38,6 +38,28 @@
 \providecommand\natexlab[1]{#1}
 \providecommand\showeprint[2][]{arXiv:#2}
 
+\bibitem[\protect\citeauthoryear{Barbu}{Barbu}{2013}]%
+        {urban}
+\bibfield{author}{\bibinfo{person}{Corentin Barbu}.}
+  \bibinfo{year}{2013}\natexlab{}.
+\newblock \showarticletitle{The Effects of City Streets on an Urban disease
+  vector}.
+\newblock  (\bibinfo{year}{2013}).
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{B.Cummins}{B.Cummins}{2012}]%
+        {cummins}
+\bibfield{author}{\bibinfo{person}{etc. B.Cummins, R.~Cortez}.}
+  \bibinfo{year}{2012}\natexlab{}.
+\newblock \bibinfo{title}{Climate - based models for understanding and
+  forecasting Dengue epidemics}.
+\newblock   (\bibinfo{year}{2012}).
+\newblock
+\showURL{%
+\url{http://dx.doi.org/10.1371/journal.pcbi.1002500}}
+
+
 \bibitem[\protect\citeauthoryear{de~Almeida}{de~Almeida}{2010}]%
         {sandro}
 \bibfield{author}{\bibinfo{person}{Sandro~Jerônimo de Almeida}.}
@@ -46,6 +68,17 @@
   aegypti mosquito population}.
 \newblock  (\bibinfo{year}{2010}).
 \newblock
+
+
+\bibitem[\protect\citeauthoryear{Grimm}{Grimm}{2006}]%
+        {grimm}
+\bibfield{author}{\bibinfo{person}{V. Grimm}.} \bibinfo{year}{2006}\natexlab{}.
+\newblock \bibinfo{title}{A Standard Protocol for Describing individual - based
+  and agent - based models}.
+\newblock   (\bibinfo{year}{2006}).
+\newblock
+\showURL{%
+\url{http://dx.doi.org/10.1016/j.ecolmodel.2006.04.023}}
 
 
 \bibitem[\protect\citeauthoryear{Isidoro}{Isidoro}{2009}]%
@@ -100,6 +133,27 @@
 \newblock
 
 
+\bibitem[\protect\citeauthoryear{N/A}{N/A}{NA}]%
+        {speed}
+\bibfield{author}{\bibinfo{person}{N/A}.} \bibinfo{year}{N/A}\natexlab{}.
+\newblock \bibinfo{title}{Speed of Animals: Mosquito}.
+\newblock   (\bibinfo{year}{N/A}).
+\newblock
+\showURL{%
+\url{http://www.speedofanimals.com/animals/mosquito}}
+
+
+\bibitem[\protect\citeauthoryear{Sutri}{Sutri}{2018}]%
+        {enzyme}
+\bibfield{author}{\bibinfo{person}{F. Sutri}.} \bibinfo{year}{2018}\natexlab{}.
+\newblock \bibinfo{title}{Enzyme Kinetics - Structure - Function -
+  Michaelis-Menten Kinetics}.
+\newblock   (\bibinfo{year}{2018}).
+\newblock
+\showURL{%
+\url{http://teachmephysiology.com/basics/enzyme-activity/enzyme-kinetics/}}
+
+
 \bibitem[\protect\citeauthoryear{WHO}{WHO}{2009}]%
         {who:dengue}
 \bibfield{author}{\bibinfo{person}{WHO}.} \bibinfo{year}{2009}\natexlab{}.
@@ -107,6 +161,18 @@
   Prevention and Control}}.
 \newblock \bibinfo{publisher}{WHO Library Cataloguing-in-Publication Data}.
 \newblock
+
+
+\bibitem[\protect\citeauthoryear{Yang}{Yang}{2009}]%
+        {yang}
+\bibfield{author}{\bibinfo{person}{H.M. Yang}.}
+  \bibinfo{year}{2009}\natexlab{}.
+\newblock \bibinfo{title}{Assessing the effects of temperature on the
+  population of Aedes aegypti, the vector of dengue}.
+\newblock   (\bibinfo{year}{2009}).
+\newblock
+\showURL{%
+\url{http://dx.doi.org/10.1017/S0950268809002040}}
 
 
 \end{thebibliography}
